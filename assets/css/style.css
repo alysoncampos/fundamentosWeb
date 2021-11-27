@@ -7,31 +7,37 @@
     font-family: "Poppins", sans-serif;
 }
 
-.fundo {
-    background: rgb(2,0,36);
+body {
+    /* background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(100,60,128,1) 56%, rgba(0,212,255,1) 100%);
-    min-height: 100vh;
+    min-height: 100vh; */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
 }
 
-.menu {
+.nav-bar {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;  
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 50px;
 }
 
-.menu ul {
+.nav-bar ul {
     list-style: none;
     display: flex;
 }
 
-.menu ul li a {
+.nav-bar ul li a {
     text-decoration: none;
     color: #f4f4f4;
     margin: 15px;
-    font-size: 40px;
+    font-size: 30px;
 }
 
-.menu ul li a:hover {
+.nav-bar ul li a:hover {
     color: #BCD2EE;
+    transition: 300ms;
 }
 
 .perfil {
@@ -48,6 +54,10 @@
 
 .texto h1 {
     font-size: 50px;
+}
+
+.texto h5 {
+    font-size: 30px;
 }
 
 .texto p {
@@ -81,10 +91,53 @@
     margin-bottom: 60px;
 }
 
+#arrow {
+    font-size: 30px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to{
+        visibility: hidden;
+    }
+}
+
+#animation {
+    transition: 300ms;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 .tm-social{
     width: 50px;
     height: 50px;
     padding: 30px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 /*Estilos da página contato.html*/

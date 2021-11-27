@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <div class="fundo">
-        <div class="menu">
-            <ul id="menu">
+        <div class="nav-bar">
+            <ul>
                 <li>
                     <a href="index.html"> Home </a>
                 </li>
@@ -30,12 +29,14 @@
                 <form>
                     <div class="campos">
                         <label for="nome">Nome</label>
-                        <input type="text" id="nome" />
+                        <input type="text" id="nome" onkeyup="validaNome()"/>
+                        <div id="txtNome"></div>
                     </div>
 
                     <div class="campos">
                         <label for="email">Email</label>
-                        <input type="text" id="email" />
+                        <input type="text" id="email" onkeyup="validaEmail()"/>
+                        <div id="txtEmail"></div>
                     </div>
 
                     <div class="campos">
@@ -45,10 +46,12 @@
                         id="assunto"
                         cols="60"
                         rows="5"
+                        onkeyup="validaAssunto()"
                         ></textarea>
+                        <div id="txtAssunto"></div>
                     </div>
 
-                    <button>Enviar</button>
+                    <button id="button" onclick="enviar()">Enviar</button>
                 </form>
             </div>
 
@@ -63,30 +66,31 @@
                 style="border:0;" 
                 allowfullscreen=""
                 aria-hidden="false" 
-                tabindex="0"
+                tabindex="0" 
+                onmousemove="mapaZoom()"
+                onmouseout="mapaNormal()"
+                id="mapa"
                 ></iframe>
             </div>
         </div>
         <hr>
         <footer>
-            <div class="menu">
+            <div class="center">
+                <a href="https://github.com/" target="_blank">
+                    <img class="tm-social" src="./assets/img/github.png" alt="Logo Github">
+                </a>
                 <a href="https://www.linkedin.com/" target="_blank">
                     <img class="tm-social" src="./assets/img/linkedin.png" alt="Logo do Linkedin">
-                </a>
-                <a href="https://www.instagram.com/" target="_blank">
-                    <img class="tm-social" src="./assets/img/instagram.png" alt="Logo do Instagram">
                 </a>
                 <a href="https://www.whatsapp.com/" target="_blank">
                     <img class="tm-social" src="./assets/img/whatsapp.png" alt="Logo do Whatsapp">
                 </a>
-                
             </div>
-            <div class="menu">
-                <p>
-                Todos os direitos reservados: Ályson Campos &copy;
-                </p>  
+            <div class="footer">
+                <p>&copy Copyright 2021</p>  
+                <p>Ályson Campos</p>  
             </div>
         </footer>
-    </div>
+    <script src="./assets/scripts/script.js"></script>
 </body>
 </html>

@@ -4,49 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Perfil</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Meu Perfil</title>
 </head>
 <body>
-    <div class="fundo">
+    <div class="nav-bar">
+        <ul>
+            <li>
+                <a href="index.html"> Home </a>
+            </li>
+            <li>
+                <a> Blog </a>
+            </li>
+            <li>
+                <a href="contato.html"> Contato </a>
+            </li>
+        </ul>
+    </div>
 
-        <div class="menu">
-            <ul>
-                <li>
-                    <a href="index.html"> Home </a>
-                </li>
-                <li>
-                    <a> Blog </a>
-                </li>
-                <li>
-                    <a href="contato.html"> Contato </a>
-                </li>
-            </ul>
+    <div class= "perfil">
+        <div class="texto">
+            <h1>Ályson Campos</h1>
+            <h5>Full-Stack Developer</h5>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi officia iusto sapiente ut vel quos modi suscipit, dolorem quod voluptatibus quas possimus labore eveniet ipsum vitae reiciendis, necessitatibus molestias sed?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis perspiciatis quia, earum inventore eaque similique, placeat alias facilis rerum ut aliquid unde, eligendi adipisci fugit modi rem. Cum, repellat voluptatibus!
+            </p>   
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis iusto tenetur ab, voluptatem culpa harum praesentium quod saepe perspiciatis doloribus aperiam! Minima illo ducimus beatae adipisci rem ea inventore consequuntur!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis animi sapiente eos maxime fugiat dolores, labore delectus, tenetur consectetur, hic eligendi incidunt laborum. Ea nesciunt neque fugiat amet, deserunt recusandae.
+            </p> 
+        </div>
+        <div>
+            <img class="br-50" src="./assets/img/minhafoto.jfif" alt="Foto do criador desse conteúdo" width="350">
+        </div>  
+    </div>
+
+    <div class="video">
+        <div>
+            <h2>Meu video predileto</h2>
         </div>
 
-        <div class= "perfil">
-            <div class="texto">
-                <h1>Sobre o Ályson</h1>
-                <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi officia iusto sapiente ut vel quos modi suscipit, dolorem quod voluptatibus quas possimus labore eveniet ipsum vitae reiciendis, necessitatibus molestias sed?
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis perspiciatis quia, earum inventore eaque similique, placeat alias facilis rerum ut aliquid unde, eligendi adipisci fugit modi rem. Cum, repellat voluptatibus!
-                </p>   
-                <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis iusto tenetur ab, voluptatem culpa harum praesentium quod saepe perspiciatis doloribus aperiam! Minima illo ducimus beatae adipisci rem ea inventore consequuntur!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis animi sapiente eos maxime fugiat dolores, labore delectus, tenetur consectetur, hic eligendi incidunt laborum. Ea nesciunt neque fugiat amet, deserunt recusandae.
-                </p> 
-            </div>
-            <div>
-                <img class="br-50" src="./assets/img/minhafoto.jfif" alt="Foto do criador desse conteúdo" width="350">
-            </div>  
+        <div onclick="displayAbout()" id="arrow">
+            <i id="animation" class="fas fa-chevron-circle-down"></i>
         </div>
 
-        <div class="video">
-            <h2>Meu video predileto:</h2>
-
+        <div style="display: none;" id="about">
             <iframe
-            width="560" 
-            height="315" 
+            width="720" 
+            height="480" 
             src="https://www.youtube.com/embed/84Tq-eAJIk4" 
             title="YouTube video player" 
             frameborder="0" 
@@ -54,26 +61,26 @@
             allowfullscreen
             ></iframe>
         </div>
+    </div>
     <hr>
     <footer>
-        <div class="menu">
+        <div class="center">
+            <a href="https://github.com/" target="_blank">
+                <img class="tm-social" src="./assets/img/github.png" alt="Logo Github">
+            </a>
             <a href="https://www.linkedin.com/" target="_blank">
                 <img class="tm-social" src="./assets/img/linkedin.png" alt="Logo do Linkedin">
-            </a>
-            <a href="https://www.instagram.com/" target="_blank">
-                <img class="tm-social" src="./assets/img/instagram.png" alt="Logo do Instagram">
             </a>
             <a href="https://www.whatsapp.com/" target="_blank">
                 <img class="tm-social" src="./assets/img/whatsapp.png" alt="Logo do Whatsapp">
             </a>
-            
         </div>
-        <div class="menu">
-            <p>
-            Todos os direitos reservados: Ályson Campos &copy;
-            </p>  
+        <div class="footer">
+            <p>&copy 2021</p>  
+            <p>Ályson Campos</p>  
         </div>
     </footer>
     </div>
+    <script src="./assets/scripts/script.js"></script>
 </body>
 </html>
